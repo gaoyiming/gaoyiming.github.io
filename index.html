@@ -328,30 +328,13 @@
 
       
         
-          
-            <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="init"><a href="#init" class="headerlink" title="init"></a>init</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init [folder]</div></pre></td></tr></table></figure>
-<p>新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。</p>
-<h4 id="new"><a href="#new" class="headerlink" title="new"></a>new</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
-<p>新建一篇文章。如果没有设置 layout 的话，默认使用 <code>_config.yml</code> 中的 <code>default_layout</code> 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
-<p>例如 本文我生成命令是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo  new HexoCommand</div></pre></td></tr></table></figure>
-<p>会生成一个HexoCommand.md文档，文档里边有一个title关键字，那个决定的你文章显示什么标题，这个HexoCommand只是会在你发布之后存在在你的url里边，来方便url定向。<br>我的url：<a href="http://gaoyiming.site/2017/03/15/HexoCommand/">http://gaoyiming.site/2017/03/15/HexoCommand/</a></p>
-<p>所以说这个并不是你文章的title（虽然默认是），他会决定你url，所以尽量写成英文（关键就是这一句）。</p>
-<h4 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"> hexo generate</div><div class="line">// 简写成</div><div class="line"> hexo g</div></pre></td></tr></table></figure>
-<p>生成静态文件</p>
-<h4 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo publish</div><div class="line">//简写</div><div class="line">hexo p</div></pre></td></tr></table></figure>
-<p>生成草稿</p>
-<h4 id="server"><a href="#server" class="headerlink" title="server"></a>server</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo server</div><div class="line">hexo s</div></pre></td></tr></table></figure>
-<p>启动服务器，之后可以在 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>  进行查看</p>
-<h4 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div><div class="line">hexo d</div></pre></td></tr></table></figure>
-<p>部署网站。例如推到github<br>这个需要在站点配置文件重配置一下<br>例如我的配置，大家对应配置一下就好</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: http://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/gaoyiming/gaoyiming.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<h4 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean</div></pre></td></tr></table></figure>
-<p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。</p>
-<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
-<p>基本上本人常使用的就这些，还有一些快捷键没有经常使用，就不提了。</p>
-
-          
+          <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="init"><a href="#init" class="headerlink" title="init"></a>init</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init [folder]</div></pre></td></tr></table></figure>
+<p>新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/15/HexoCommand/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
