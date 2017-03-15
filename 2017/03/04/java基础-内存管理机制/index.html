@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Mr_gao'Blog" />
+  <meta name="keywords" content="java虚拟机," />
 
 
 
@@ -84,19 +84,21 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="java基础-内存管理机制
+Java虚拟机在执行Java程序的过程中会把它管理的内存划分成若干个不同的管理的区域，这些区域有各自的用途，以及创建和销毁的时机。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="gaoyiming.site/2016/11/21/hello-world/index.html">
+<meta property="og:title" content="java基础-内存管理机制">
+<meta property="og:url" content="gaoyiming.site/2017/03/04/java基础-内存管理机制/index.html">
 <meta property="og:site_name" content="Mr_gao's Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-11-21T07:34:56.000Z">
+<meta property="og:description" content="java基础-内存管理机制
+Java虚拟机在执行Java程序的过程中会把它管理的内存划分成若干个不同的管理的区域，这些区域有各自的用途，以及创建和销毁的时机。">
+<meta property="og:image" content="http://7xswbk.com1.z0.glb.clouddn.com/2017030454177屏幕快照 2017-03-04 上午9.25.07.png">
+<meta property="og:updated_time" content="2017-03-14T13:00:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="java基础-内存管理机制">
+<meta name="twitter:description" content="java基础-内存管理机制
+Java虚拟机在执行Java程序的过程中会把它管理的内存划分成若干个不同的管理的区域，这些区域有各自的用途，以及创建和销毁的时机。">
+<meta name="twitter:image" content="http://7xswbk.com1.z0.glb.clouddn.com/2017030454177屏幕快照 2017-03-04 上午9.25.07.png">
 
 
 
@@ -117,9 +119,9 @@ Quick">
 
 
 
-  <link rel="canonical" href="gaoyiming.site/2016/11/21/hello-world/"/>
+  <link rel="canonical" href="gaoyiming.site/2017/03/04/java基础-内存管理机制/"/>
 
-  <title> Hello World | Mr_gao's Blog </title>
+  <title> java基础-内存管理机制 | Mr_gao's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -260,7 +262,7 @@ Quick">
             
             
               
-                Hello World
+                java基础-内存管理机制
               
             
           </h1>
@@ -272,8 +274,8 @@ Quick">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-21T15:34:56+08:00" content="2016-11-21">
-              2016-11-21
+            <time itemprop="dateCreated" datetime="2017-03-04T10:07:34+08:00" content="2017-03-04">
+              2017-03-04
             </time>
           </span>
 
@@ -283,8 +285,8 @@ Quick">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/21/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/21/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2017/03/04/java基础-内存管理机制/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/04/java基础-内存管理机制/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -314,15 +316,23 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h1 id="java基础-内存管理机制"><a href="#java基础-内存管理机制" class="headerlink" title="java基础-内存管理机制"></a>java基础-内存管理机制</h1><blockquote>
+<p>Java虚拟机在执行Java程序的过程中会把它管理的内存划分成若干个不同的管理的区域，这些区域有各自的用途，以及创建和销毁的时机。</p>
+</blockquote>
+<a id="more"></a>
+<h4 id="程序计数器"><a href="#程序计数器" class="headerlink" title="程序计数器"></a>程序计数器</h4><h6 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h6><p>是一块较小的内存空间，<code>他可以看成当前线程执行字节码的行号指示器</code>。在虚拟机的概念模型里，字节码解释器就是通过改变这个计数器的值来选取下一条需要执行的字节码指令。分支、循环、跳转、异常处理、线程恢复等基础功能都需要依赖这个计数器</p>
+<h6 id="存在的原因"><a href="#存在的原因" class="headerlink" title="存在的原因"></a>存在的原因</h6><p>由于Java虚拟机的多线程是通过线程轮流切换来完成的，也就是说无论何时一个处理器只会执行一个线程，为了可以回到原线程正确的位置，所以每个线程都有一个独立的程序计数器。各线程之间的程序计数器不互相影响，独立存储，我们管这片区域叫“线程私有”的区域。</p>
+<h6 id="存储内容"><a href="#存储内容" class="headerlink" title="存储内容"></a>存储内容</h6><p>如果说当前线程执行的是一个<code>java方法</code>，那么此时计数器记录的是这在执行的虚拟机字节码<code>指令地址</code>，如果说执行的是虚拟机native方法，那么计数器的值为空（udefined）。</p>
+<h6 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h6><p>程序计数器这片内存区域是整个虚拟机唯一一个不会出现OOM的区域。</p>
+<h3 id="虚拟机栈（也就是常说的栈）"><a href="#虚拟机栈（也就是常说的栈）" class="headerlink" title="虚拟机栈（也就是常说的栈）"></a>虚拟机栈（也就是常说的栈）</h3><h6 id="定义：-1"><a href="#定义：-1" class="headerlink" title="定义："></a>定义：</h6><p>也是线程私有的一块区域<br>描述的是java方法执行的内存模型：每个方法执行的时候都会创造一个栈帧。这个栈帧用于存储局部变量表、操作数栈、动态链接、方法出口等信息。我们谈论的栈通常是局部变量表这一块。<br>局部变量表存放了编译时期可知的各种基本数据类型，和对象引用（指向一个对象的引用指针）和returnAddress类型（指向了一条字节码指令的地址）<br>其中64位长long和double类型都会占用2个局部变量空间，其余的占用1个。局部变量表都是在编译时期就已经确定了空间的使用大小，所以当进入一个方法时，这个方法在栈中需要多大内存就已经确定了，在运行时期不会更改。<br>java虚拟机规范中这个区域可能出现两种异常<br>StackOverFlowError：线程请求的栈深度大于当前虚拟机所允许的深度（<br>由于当前线程的栈满了，通常是循环调用过多导致）<br>OutOfMemoryError：当前栈动态申请内存时没有办法申请到足够的内存</p>
+<h3 id="本地方法栈"><a href="#本地方法栈" class="headerlink" title="本地方法栈"></a>本地方法栈</h3><p>与虚拟机栈发挥的作用相当类似他们之间的区别<br>本地方法栈：为虚拟机本身使用到的native方法服务<br>栈（虚拟机栈）：是为了虚拟机执行java方法服务。<br>它也会有StackOverflowError和OutOfMemoryError这两种异常。</p>
+<h3 id="java堆"><a href="#java堆" class="headerlink" title="java堆"></a>java堆</h3><p>对于大多数应用来说，堆的内存空间应该是最大的。这片内存区域存在的目的就是存放实例对象。是所有线程共享的一片区域，在虚拟机启动的时候创建。<br>此区域存在的目的就是存放实例，所有对象的实例和数组都在堆上分配。<br>java堆可以是物理上不连续的空间，只要逻辑上是连续的即可。<br>堆可以抛出OOM异常。</p>
+<h3 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h3><p>也是所有线程共享的一片区域<br>用来存储已经被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。</p>
+<p>可以抛出OOM异常</p>
+<h5 id="运行时常量池"><a href="#运行时常量池" class="headerlink" title="运行时常量池"></a>运行时常量池</h5><p>运行时常量池是方法区的一部分<br>class文件除了有类的版本、字段、方法、接口等描述信息外，还有一项信息是常量池。他主要用处存放编译期生成的各种字面量和符号引用，这部分将在类加载后进入方法区的运行时常量池中存放。<br>运行时常量池对于class文件中的常量池的一个重要特征是具有动态性，java不要求常量一定在编时期才能产生，也就是说不是只有class文件中常量池才能进入到运行时常量池，运行期也有可能产生新的常量放到运行时常量池中。</p>
+<hr>
+<p>综上，就是整个运行期内存状况，最后 po一张图：<br><img src="http://7xswbk.com1.z0.glb.clouddn.com/2017030454177屏幕快照 2017-03-04 上午9.25.07.png" alt="java虚拟机运行时数据区"></p>
+<h4 id="注：-1"><a href="#注：-1" class="headerlink" title="注："></a>注：</h4><p>参考《深入理解java虚拟机》</p>
 
       
     </div>
@@ -343,17 +353,27 @@ Quick">
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/java虚拟机/" rel="tag">#java虚拟机</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/11/21/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/04/java基础-内存管理机制/" rel="prev" title="java基础-内存管理机制">
-                java基础-内存管理机制 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/03/15/Hexo主题配置/" rel="prev" title="Hexo主题配置">
+                Hexo主题配置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -380,8 +400,8 @@ Quick">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/21/hello-world/"
-           data-title="Hello World" data-url="gaoyiming.site/2016/11/21/hello-world/">
+      <div class="ds-thread" data-thread-key="2017/03/04/java基础-内存管理机制/"
+           data-title="java基础-内存管理机制" data-url="gaoyiming.site/2017/03/04/java基础-内存管理机制/">
       </div>
     
   </div>
@@ -485,7 +505,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#java基础-内存管理机制"><span class="nav-number">1.</span> <span class="nav-text">java基础-内存管理机制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#程序计数器"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">程序计数器</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#定义："><span class="nav-number">1.0.0.1.0.1.</span> <span class="nav-text">定义：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#存在的原因"><span class="nav-number">1.0.0.1.0.2.</span> <span class="nav-text">存在的原因</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#存储内容"><span class="nav-number">1.0.0.1.0.3.</span> <span class="nav-text">存储内容</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#注："><span class="nav-number">1.0.0.1.0.4.</span> <span class="nav-text">注：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#虚拟机栈（也就是常说的栈）"><span class="nav-number">1.0.1.</span> <span class="nav-text">虚拟机栈（也就是常说的栈）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#定义：-1"><span class="nav-number">1.0.1.0.0.1.</span> <span class="nav-text">定义：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地方法栈"><span class="nav-number">1.0.2.</span> <span class="nav-text">本地方法栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java堆"><span class="nav-number">1.0.3.</span> <span class="nav-text">java堆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法区"><span class="nav-number">1.0.4.</span> <span class="nav-text">方法区</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#运行时常量池"><span class="nav-number">1.0.4.0.1.</span> <span class="nav-text">运行时常量池</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注：-1"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">注：</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
